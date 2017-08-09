@@ -15,7 +15,7 @@ To get heart rate data, I've used a Bluetooth Prephiral Simulator app called Lig
 
 
 ## resources
-* (https://github.com/electron/electron/issues/7367)
-* (https://dev.opera.com/articles/web-bluetooth-intro/)
-* (https://googlechrome.github.io/samples/web-bluetooth/index.html)
-* (https://github.com/GoogleChrome/samples/tree/gh-pages/web-bluetooth)
+* https://github.com/electron/electron/issues/7367
+* https://dev.opera.com/articles/web-bluetooth-intro/
+* https://googlechrome.github.io/samples/web-bluetooth/index.html
+* https://github.com/GoogleChrome/samples/tree/gh-pages/web-bluetooth
