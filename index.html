@@ -7,18 +7,34 @@
 </head>
 
 <body>
-  <h2>Electron with Chrome WebBluetooth API</h2>
-  <p>This sample illustrates the use of the Web Bluetooth API to retrieve basic device information from a nearby Bluetooth Low
-    Energy Device.</p>
+  <div style="padding-top: 15px">
+    <h2>Electron with Chrome WebBluetooth API</h2>
+    <strong>Get device info</strong>
+    <p>This sample illustrates the use of the Web Bluetooth API to retrieve basic device information from a nearby Bluetooth
+      Low Energy Device.</p>
 
-  <form>
     <label for="allDevices">All Devices</label>
     <input id="allDevices" type="checkbox">
     <input id="service" type="text" size=17 list="services" placeholder="Bluetooth Service">
     <input id="name" type="text" size=17 placeholder="Device Name">
     <input id="namePrefix" type="text" size=17 placeholder="Device Name Prefix">
-    <button>Get Bluetooth Device Info</button>
-  </form>
+    <button id="get-device-info">Log Bluetooth Device Info</button>
+  </div>
+
+  <div style="padding-top: 15px">
+    <strong>Get heart rate data</strong>
+    <p>To get heart rate data, I've used a Bluetooth Prephiral Simulator app called LightBlue downloaded from the App Store.
+      There, create a virtual prephiral service for heart rate. Go to the 'Heart Rate Control Point' characterisitc, add
+      read and wight capabilities. You can also set a default Hex value. You need this to be able to get a result from 'Get
+      Heart Rate' button.</p>
+    <button id="get-heart-rate">Get Heart Rate</button>
+  </div>
+  <div style="padding-top: 15px">
+    <strong>Set heart rate data</strong>
+    <p>Send a number to your bluetooth device, and see the value there.</p>
+    <input id="set-heart-rate-value" value="1" type="number" size=17 placeholder="Type value">
+    <button id="set-heart-rate">Set Heart Rate</button>
+  </div>
 </body>
 
 </html>
