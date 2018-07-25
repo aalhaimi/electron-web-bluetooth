@@ -4,6 +4,10 @@ const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
 
+if (process.platform === "linux"){
+  app.commandLine.appendSwitch("enable-experimental-web-platform-features", true);
+}
+
 app
   .commandLine
   .appendSwitch('enable-web-bluetooth', true);
